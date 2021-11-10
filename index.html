@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script type="text/javascript" src="src/index.js"></script>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <div class="l-form">
+        <form action="" class="form" onsubmit="return false">
+          <p>Sem valor</p>
+          <div class="form_div">
+            <input type="text" class="form_input" placeholder=" " />
+            <label for="" class="form_label">Sem valor</label>
+          </div>
+          <p>Com Valor</p>
+          <div class="form_div">
+            <input
+              type="text"
+              class="form_input"
+              placeholder=" "
+              value="Silva"
+            />
+            <label for="" class="form_label">Com Valor</label>
+          </div>
+          <p>Ativo/ Edição</p>
+          <div class="form_div">
+            <input
+              id="active_input"
+              type="text"
+              class="form_input"
+              placeholder=" "
+            />
+            <label for="" class="form_label">Last name</label>
+          </div>
+          <p>Erro</p>
+          <div class="form_div">
+            <input
+              type="text"
+              class="form_input"
+              minlength="3"
+              placeholder=" "
+              value="S3"
+              onkeydown="handleCorrectedInput(this)"
+            />
+            <label for="" class="form_label">Last name</label>
+            <span class="form_help"></span>
+          </div>
+          <p>Sem Valor + Inativo</p>
+          <div class="form_div">
+            <input type="text" disabled class="form_input" placeholder=" " />
+            <label for="" class="form_label">Last name</label>
+          </div>
+
+          <p>Com Valor + Inativo</p>
+          <div class="form_div">
+            <input
+              type="text"
+              disabled
+              class="form_input"
+              placeholder=" "
+              value="Last name"
+            />
+            <label for="" class="form_label">Disabled</label>
+          </div>
+          <input
+            type="submit"
+            id="submitId"
+            class="form_button"
+            value="Sign In"
+            onclick="validateForm(this.id)"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
